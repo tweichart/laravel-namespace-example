@@ -10,10 +10,10 @@ class External
     public function createRoutes()
     {
         Route::group([
-            'namespace' => '\SecondApp\Routes',
+            'namespace' => '\ExternalApp\Routes\External',
             'prefix'    => 'external'
         ], function ($router) {
-            $router->get('/', 'ExternalController@index');
+            $router->get('/', 'Controller@index');
         });
     }
 }
